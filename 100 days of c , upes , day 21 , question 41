@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <math.h>
+int main()
+{
+    int n, originalNum, firstDigit,rem, lastDigit, digits = 0;
+    int swappedNum, middlePart, multiplier;
+
+    printf("Enter a number: ");
+    scanf("%d", &n);
+
+    originalNum = n;
+    lastDigit = n % 10;
+
+    int temp = n;
+    while (temp >= 10){
+        temp /= 10;
+        digits++;
+    }
+    firstDigit = temp;
+
+    multiplier = pow(10, digits);
+
+    middlePart = n % multiplier;
+    middlePart = middlePart / 10;
+
+    swappedNum = (lastDigit * multiplier) + (middlePart * 10) + firstDigit;
+
+    printf("Swapped number : %d\n", swappedNum);
+    return 0;
+
+    
+}

@@ -16,7 +16,7 @@ int main() {
         n++;
     }
 
-    temp = num; // Reset temp back to the input number
+    temp = num; 
 
     
     while (temp != 0) {

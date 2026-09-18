@@ -7,7 +7,7 @@ int main() {
         return 1;
     }
 
-    // Ensure numbers are positive
+    
     n1 = (n1 < 0) ? -n1 : n1;
     n2 = (n2 < 0) ? -n2 : n2;
 
